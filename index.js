@@ -18,7 +18,7 @@ const createManager = () => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter a valid name!");
+          console.log("Please enter a valid name.");
           return false;
         }
       }
@@ -26,12 +26,12 @@ const createManager = () => {
     {
       type: "input",
       name: "id",
-      message: "Enter the manager's ID Number!",
+      message: "Enter the manager's ID Number.",
       validate: idInput => {
         if (!isNaN(idInput)) {
           return true;
         } else {
-          console.log("Please enter a valid ID number!");
+          console.log("Please enter a valid ID number.");
           return false;
         }
       }
@@ -39,13 +39,13 @@ const createManager = () => {
     {
       type: "input",
       name: "email",
-      message: "Enter the manager's email address; No CAPS!",
+      message: "Enter the manager's email address.",
       validate: emailInput => {
         email = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(emailInput)
         if (email) {
           return true;
         } else {
-          console.log("Please enter a valid email address; No CAPS!");
+          console.log("Please enter a valid email address.");
           return false;
         }
       }
@@ -53,12 +53,12 @@ const createManager = () => {
     {
       type: "input",
       name: "officeNumber",
-      message: "Enter the manager's office number!",
+      message: "Enter the manager's office number.",
       validate: officeNumberInput => {
         if (!isNaN(officeNumberInput)) {
           return true;
         } else {
-          console.log("Please enter a valid Phone Number without any dashes or parentheses (-)");
+          console.log("Please enter a valid Phone Number.");
           return false;
         }
       }
@@ -85,12 +85,12 @@ const createEmployee = () => {
     {
       type: "input",
       name: "name",
-      message: "Enter the employee's full name!",
+      message: "Enter the employee's full name.",
       validate: nameInput => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter a valid name!");
+          console.log("Please enter a valid name.");
           return false;
         }
       }
@@ -98,12 +98,12 @@ const createEmployee = () => {
     {
       type: "input",
       name: "id",
-      message: "Enter the employee's ID Number!",
+      message: "Enter the employee's ID Number.",
       validate: idInput => {
         if (!isNaN(idInput)) {
           return true;
         } else {
-          console.log("Please enter a valid ID number!");
+          console.log("Please enter a valid ID number.");
           return false;
         }
       }
@@ -111,13 +111,13 @@ const createEmployee = () => {
     {
       type: "input",
       name: "email",
-      message: "Enter the employee's email address; No CAPS!",
+      message: "Enter the employee's email address.",
       validate: emailInput => {
         email = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(emailInput)
         if (email) {
           return true;
         } else {
-          console.log("Please enter a valid email address; No CAPS!");
+          console.log("Please enter a valid email address.");
           return false;
         }
       }
@@ -125,13 +125,13 @@ const createEmployee = () => {
     {
       type: "input",
       name: "github",
-      message: "Enter the engineer's GitHub username!",
+      message: "Enter the engineer's GitHub username.",
       when: (input) => input.role === "Engineer",
       validate: employeeInput => {
         if (employeeInput) {
           return true;
         } else {
-          console.log("Please enter a valid GitHub username!");
+          console.log("Please enter a valid GitHub username.");
           return false;
         }
       }
@@ -139,13 +139,13 @@ const createEmployee = () => {
     {
       type: "input",
       name: "school",
-      message: "Enter the intern's school or affiliation!",
+      message: "Enter the intern's school or affiliation.",
       when: (input) => input.role === "Intern",
       validate: employeeInput => {
         if (employeeInput) {
           return true;
         } else {
-          console.log("Please enter valid text without numbers!");
+          console.log("Please enter valid text without numbers.");
           return false;
         }
       }
@@ -154,7 +154,7 @@ const createEmployee = () => {
       type: "list",
       name: "add",
       message: "Would you like to add more team members?",
-      choices: ["Yes", "No, I'm done adding members; Generate my Team!"]
+      choices: ["Yes", "No, Generate my Team!"]
     }
   ])
   .then(genMember => {
@@ -185,7 +185,7 @@ const writeFile = data => {
       console.log(err);
       return;
     } else {
-      console.log("Your requested team profile has been created! Please check out 'index.html' in the dist folder")
+      console.log("Please check out 'index.html' in the dist folder.")
     }
   })
 };
