@@ -8,6 +8,7 @@ The purpose of this project is to use node and the inquirer package to help gene
 * Javascript
 * Node
 * Inquirer Package
+* Jest
 
 ## Instructions
 1. Download the repo.
