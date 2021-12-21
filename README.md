@@ -9,6 +9,13 @@ The purpose of this project is to use node and the inquirer package to help gene
 * Node
 * Inquirer Package
 
+## Instructions
+1. Download the repo.
+2. Enter "npm i" in your terminal.
+3. Enter "npm run test" in your terminal to execute the tests.
+4. Run "node index.js" in your terminal to begin interfacing with the application.
+5. Open index.html within "dist" folder to view the web page.
+
 ## Screenshots
 
 ## Video Demo
